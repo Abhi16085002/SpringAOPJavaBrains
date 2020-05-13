@@ -7,6 +7,8 @@
    http://www.springframework.org/schema/aop 
    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
    
+   <aop:aspectj-autoproxy />
+   
    <bean name="triangle" class="org.koushik.javabrains.model.Triangle" >
          <property name="name" value="Triangle name" />
    </bean>
@@ -17,5 +19,6 @@
    
    <bean name="shapeService" class="org.koushik.javabrains.service.ShapeService" autowire="byName" />
    
+   <bean name="loggingAspect" class="org.koushik.javabrains.aspect.LoggingAspect" />
 
 </beans>
