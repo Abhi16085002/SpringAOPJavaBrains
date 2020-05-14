@@ -12,11 +12,7 @@ public class AopMain {
 		
 		ShapeService shapeService = context.getBean("shapeService",ShapeService.class);
 		
-		shapeService.getCircle().setNameAndReturn("dummy circle");
-		shapeService.getCircle().setName("dummy circle");
-		
-//		System.out.println(shapeService.getCircle().getName());
-		
+		shapeService.getCircle();
 	}
 
 }
