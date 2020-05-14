@@ -33,7 +33,7 @@ public class LoggingAspect {
 		System.out.println("An exception has been thrown "+ ex);
 	}
 	
-	@Around("allGetters()")
+	@Around("@annotation(org.koushik.javabrains.aspect.Loggable)")
 	public Object myAroundAdvice(ProceedingJoinPoint proceedingJoinPoint ) {
 		
 		Object returnValue = null;
