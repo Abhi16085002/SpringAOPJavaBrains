@@ -32,7 +32,8 @@ public class LoggingAspect {
 		return returnValue;
 	}
 	
-//	@Pointcut("execution(* get*())") 
-//	public void allGetters () {} 
+	public void loggingAdvice() {
+		System.out.println("logging from Advice");
+	}
 	
 }
